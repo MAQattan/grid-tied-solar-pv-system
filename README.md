@@ -61,7 +61,7 @@ $$\text{Lateral Shading Spacing: } D_{Lat} = D \times \sin(\psi_{Correction})$$
 
 At the critical intersection point on December 21, the maximum vertical shadow height ($H_{shadow}$) from the stairwell was calculated at $0.763\text{ m}$. Because the physical support frame raises the adjacent active module area to a minimum height of $1.173\text{ m}$:
 
-$$H_{shadow}\ (0.763\text{ m}) < H_{collector_min}\ (1.173\text{ m})$$
+$$H_{shadow}\ (0.763\text{ m}) < H_{collector\_min}\ (1.173\text{ m})$$
 
 This confirms the shadow passes entirely below the active cells, eliminating hotspot risks and seasonal mismatch losses.
 
@@ -97,7 +97,7 @@ Dynamic temperature-corrected calculations were performed to establish safe open
 - $V_{oc}$ at $0^\circ\text{C}$ = $56.64\text{ V}$ per module.
 - $V_{mp}$ at $60^\circ\text{C}$ = $40.12\text{ V}$ per module.
 
-$$N_{ideal} = \frac{V_{rated_inverter}}{V_{mp_STC}} = \frac{600\text{ V}}{44.66\text{ V}} \approx 13\text{ Modules in Series}$$
+$$N_{ideal} = \frac{V_{rated\_inverter}}{V_{mp\_STC}} = \frac{600\text{ V}}{44.66\text{ V}} \approx 13\text{ Modules in Series}$$
 
 The string layout consists of **3 Strings of 13 Modules** each. To isolate local shading losses, a **Multi-MPPT mapping strategy** is implemented:
 
@@ -109,7 +109,7 @@ The string layout consists of **3 Strings of 13 Modules** each. To isolate local
 
 ### 4.6. Cable Sizing, Protections & Grounding Grid
 
-- **DC Cabling:** Specialty solar copper cables conforming to **EN 50618** (4 mm² cross-section). At $45^\circ\text{C}$ ambient, the derated ampacity ($I_{allowable} = 33.37\text{ A}$) easily exceeds the design current ($I_{dc_max} = 18.075\text{ A}$). The total DC voltage drop is optimized at **${} 0.763\%$**, well below the academic ${} 1\%$ limit.
+- **DC Cabling:** Specialty solar copper cables conforming to **EN 50618** (4 mm² cross-section). At $45^\circ\text{C}$ ambient, the derated ampacity ($I_{allowable} = 33.37\text{ A}$) easily exceeds the design current ($I_{dc\_max} = 18.075\text{ A}$). The total DC voltage drop is optimized at **${} 0.763\%$**, well below the academic ${} 1\%$ limit.
 - **AC Cabling:** Low-voltage $4 \times 16\text{ mm}^2\text{ Cu/XLPE/PVC}$ cable (El Sewedy Cables). The derated ampacity of $85.26\text{ A}$ safely coordinates with the protective MCB. The AC voltage drop over a 30m run is kept at **${} 0.717\%$**.
 - **Protections (Selectivity-Based Coordination):**
     - _String Fuses:_ $25\text{ A}$, $1000\text{ Vdc}$, gPV class (IEC 60269-6) protecting modules from reverse fault currents.
