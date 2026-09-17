@@ -61,7 +61,7 @@ $$\text{Lateral Shading Spacing: } D_{Lat} = D \times \sin(\psi_{Correction})$$
 
 At the critical intersection point on December 21, the maximum vertical shadow height ($H_{shadow}$) from the stairwell was calculated at $0.763\text{ m}$. Because the physical support frame raises the adjacent active module area to a minimum height of $1.173\text{ m}$:
 
-$$H_{shadow}\ (0.763\text{ m}) < H_{collector\_min}\ (1.173\text{ m})$$
+$$H_{shadow}\ (0.763\text{ m}) < H_{collector-min}\ (1.173\text{ m})$$
 
 This confirms the shadow passes entirely below the active cells, eliminating hotspot risks and seasonal mismatch losses.
 
@@ -97,7 +97,7 @@ Dynamic temperature-corrected calculations were performed to establish safe open
 - $V_{oc}$ at $0^\circ\text{C}$ = $56.64\text{ V}$ per module.
 - $V_{mp}$ at $60^\circ\text{C}$ = $40.12\text{ V}$ per module.
 
-$$N_{ideal} = \frac{V_{rated\_inverter}}{V_{mp\_STC}} = \frac{600\text{ V}}{44.66\text{ V}} \approx 13\text{ Modules in Series}$$
+$$N_{ideal} = \frac{V_{rated-inverter}}{V_{mp-STC}} = \frac{600\text{ V}}{44.66\text{ V}} \approx 13\text{ Modules in Series}$$
 
 The string layout consists of **3 Strings of 13 Modules** each. To isolate local shading losses, a **Multi-MPPT mapping strategy** is implemented:
 
